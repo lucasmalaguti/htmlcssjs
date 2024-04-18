@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <!-- Hello World -->
+    <div id="olar" style="font-size:large;"></div>
+    <button type="button" onclick='document.getElementById("olar").innerHTML = "Hello World!!!11!!"'>Clica,
+        duvido</button>
+
+    <hr class="featurette-divider">
+
+    <!-- Soma 2 Inteiros -->
+    <div>
+        <label for="valor1">valor1</label>
+        <input id="valor1" name="valor1" type="number">
+
+        <label for="valor2">valor2</label>
+        <input id="valor2" name="valor2" type="number">
+
+        <button onclick="soma()">Somar</button>
+        <label for="result">Resultado</label>
+        <input id="result" name="result" type="number">
+
+    </div>
+    <hr class="featurette-divider">
+
+    <!-- Alterar por ID -->
+    <div id="ex3" style="background-color: white; text-decoration-color: black;" onclick="color()">Aqui estou alterando
+        por ID, clica vai</div>
+    <hr class="featurette-divider">
+
+    <!-- Alterar por name -->
+    <div name="ex4" style="font-size: 16px;">Aqui todos nos compartilhamos o mesmo NAME</div>
+    <div name="ex4" style="font-size: 16px;">É verdade, pode clicar em qualquer um de nos..</div>
+    <div name="ex4" style="font-size: 16px;">Mesmo nome = uniao faz a força</div>
+
+    <button onclick="Name()">Alterar Propriedade por NAME</button>
+    <hr class="featurette-divider">
+
+    <!-- Alterar por class -->
+    <div class="ex5">Este é um parágrafo.</div>
+    <button onclick="Class()">Alterar Propriedade por Class</button>
+
+</body>
+
+</html>
